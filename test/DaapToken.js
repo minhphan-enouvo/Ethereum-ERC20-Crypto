@@ -89,4 +89,36 @@ contract("DappToken", (accounts) => {
         );
       });
   });
+
+  it("Approve tokens for delegated transfer", () => {
+    return DappToken.deployed()
+      .then((instance) => {
+        tokenInstance = instance;
+        return tokenInstance.approve.call(accounts[1], 100);
+      })
+      .then((success) => {
+        assert.equal(success, true, "Success");
+        return tokenInstance.approve(accounts[1], 100);
+      })
+      .then((receipt) => {
+        assert.equal(receipt.logs.length, 1, "Trigger one event");
+        assert.equal(
+          receipt.logs[0].event,
+          "Approval",
+          "Should be Transfer event"
+        );
+        assert.equal(receipt.logs[0].args._owner, accounts[0], "Success");
+        assert.equal(receipt.logs[0].args._spender, accounts[1], "Success");
+        assert.equal(receipt.logs[0].args._value, 100, "Success");
+
+        return tokenInstance.allowance(accounts[0], accounts[1]);
+      })
+      .then((allowance) => {
+        assert.equal(
+          allowance,
+          100,
+          "Stores the allowance for delegated transfer"
+        );
+      });
+  });
 });
