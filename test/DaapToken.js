@@ -1,7 +1,7 @@
 const DappToken = artifacts.require("../contracts/DappToken.sol");
 
 contract("DappToken", (accounts) => {
-  let tokenInstance;
+  let tokenInstance, fromAccount, toAccount, spendingAccount;
 
   it("Initializes the contract with the correct values", () => {
     return DappToken.deployed()
@@ -105,7 +105,7 @@ contract("DappToken", (accounts) => {
         assert.equal(
           receipt.logs[0].event,
           "Approval",
-          "Should be Transfer event"
+          "Should be Approval event"
         );
         assert.equal(receipt.logs[0].args._owner, accounts[0], "Success");
         assert.equal(receipt.logs[0].args._spender, accounts[1], "Success");
@@ -119,6 +119,71 @@ contract("DappToken", (accounts) => {
           100,
           "Stores the allowance for delegated transfer"
         );
+      });
+  });
+
+  it("Handles delegated token transfer", () => {
+    return DappToken.deployed()
+      .then((instance) => {
+        tokenInstance = instance;
+        fromAccount = accounts[2];
+        toAccount = accounts[3];
+        spendingAccount = accounts[4];
+        return tokenInstance.transfer(fromAccount, 100, { from: accounts[0] });
+      })
+      .then((receipt) => {
+        return tokenInstance.approve(spendingAccount, 10, {
+          from: fromAccount
+        });
+      })
+      .then((receipt) => {
+        return tokenInstance.transferFrom(fromAccount, toAccount, 9999, {
+          from: spendingAccount
+        });
+      })
+      .then(assert.fail)
+      .catch((err) => {
+        assert(err.message.indexOf("revert") >= 0, "Can not transfer value");
+        return tokenInstance.transferFrom(fromAccount, toAccount, 20, {
+          from: spendingAccount
+        });
+      })
+      .then(assert.fail)
+      .catch((err) => {
+        assert(err.message.indexOf("revert") >= 0, "Can not transfer value");
+        return tokenInstance.transferFrom.call(fromAccount, toAccount, 10, {
+          from: spendingAccount
+        });
+      })
+      .then((success) => {
+        assert.equal(success, true, "Success");
+        return tokenInstance.transferFrom(fromAccount, toAccount, 10, {
+          from: spendingAccount
+        });
+      })
+      .then((receipt) => {
+        assert.equal(receipt.logs.length, 1, "Trigger one event");
+        assert.equal(
+          receipt.logs[0].event,
+          "Transfer",
+          "Should be Transfer event"
+        );
+        assert.equal(receipt.logs[0].args._from, fromAccount, "Success");
+        assert.equal(receipt.logs[0].args._to, toAccount, "Success");
+        assert.equal(receipt.logs[0].args._value, 10, "Success");
+
+        return tokenInstance.balanceOf(fromAccount);
+      })
+      .then((balance) => {
+        assert.equal(balance.toNumber(), 90, "Success");
+        return tokenInstance.balanceOf(toAccount);
+      })
+      .then((balance) => {
+        assert.equal(balance.toNumber(), 10, "Success");
+        return tokenInstance.allowance(fromAccount, spendingAccount);
+      })
+      .then((allowance) => {
+        assert.equal(allowance, 0, "Success");
       });
   });
 });
