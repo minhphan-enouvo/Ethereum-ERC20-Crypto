@@ -264,14 +264,24 @@
   "ast": {
     "absolutePath": "project:/contracts/DappToken.sol",
     "exportedSymbols": {
-      "DappToken": [185]
+      "DappToken": [
+        185
+      ]
     },
     "id": 186,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 1,
-        "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
         "nodeType": "PragmaDirective",
         "src": "32:32:0"
       },
@@ -282,7 +292,9 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 185,
-        "linearizedBaseContracts": [185],
+        "linearizedBaseContracts": [
+          185
+        ],
         "name": "DappToken",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -784,7 +796,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 200,
+                          "referencedDeclaration": 288,
                           "src": "627:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -986,7 +998,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 200,
+                              "referencedDeclaration": 288,
                               "src": "831:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1050,8 +1062,11 @@
                       "id": 64,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [203, 204],
-                      "referencedDeclaration": 203,
+                      "overloadedDeclarations": [
+                        291,
+                        292
+                      ],
+                      "referencedDeclaration": 291,
                       "src": "813:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1108,7 +1123,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 200,
+                          "referencedDeclaration": 288,
                           "src": "874:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1250,7 +1265,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 200,
+                          "referencedDeclaration": 288,
                           "src": "954:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1514,7 +1529,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 200,
+                            "referencedDeclaration": 288,
                             "src": "1134:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1608,7 +1623,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 200,
+                          "referencedDeclaration": 288,
                           "src": "1189:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1925,8 +1940,11 @@
                       "id": 135,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [203, 204],
-                      "referencedDeclaration": 203,
+                      "overloadedDeclarations": [
+                        291,
+                        292
+                      ],
+                      "referencedDeclaration": 291,
                       "src": "1388:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2032,7 +2050,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 200,
+                              "referencedDeclaration": 288,
                               "src": "1468:3:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -2081,8 +2099,11 @@
                       "id": 143,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [203, 204],
-                      "referencedDeclaration": 203,
+                      "overloadedDeclarations": [
+                        291,
+                        292
+                      ],
+                      "referencedDeclaration": 291,
                       "src": "1433:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2312,7 +2333,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 200,
+                          "referencedDeclaration": 288,
                           "src": "1579:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2627,13 +2648,23 @@
     "attributes": {
       "absolutePath": "project:/contracts/DappToken.sol",
       "exportedSymbols": {
-        "DappToken": [185]
+        "DappToken": [
+          185
+        ]
       }
     },
     "children": [
       {
         "attributes": {
-          "literals": ["solidity", ">=", "0.4", ".22", "<", "0.9", ".0"]
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
         },
         "id": 1,
         "name": "PragmaDirective",
@@ -2641,12 +2672,18 @@
       },
       {
         "attributes": {
-          "baseContracts": [null],
-          "contractDependencies": [null],
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
-          "linearizedBaseContracts": [185],
+          "linearizedBaseContracts": [
+            185
+          ],
           "name": "DappToken",
           "scope": 186
         },
@@ -3122,7 +3159,9 @@
               "implemented": true,
               "isConstructor": true,
               "kind": "constructor",
-              "modifiers": [null],
+              "modifiers": [
+                null
+              ],
               "name": "",
               "scope": 185,
               "stateMutability": "nonpayable",
@@ -3165,7 +3204,9 @@
               },
               {
                 "attributes": {
-                  "parameters": [null]
+                  "parameters": [
+                    null
+                  ]
                 },
                 "children": [],
                 "id": 42,
@@ -3200,7 +3241,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 32,
                                   "type": "mapping(address => uint256)",
                                   "value": "balanceOf"
@@ -3224,8 +3267,10 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
-                                      "referencedDeclaration": 200,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 288,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -3246,7 +3291,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 40,
                               "type": "uint256",
                               "value": "_initialSupply"
@@ -3281,7 +3328,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 12,
                               "type": "uint256",
                               "value": "totalSupply"
@@ -3293,7 +3342,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 40,
                               "type": "uint256",
                               "value": "_initialSupply"
@@ -3328,7 +3379,9 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [null],
+              "modifiers": [
+                null
+              ],
               "name": "transfer",
               "scope": 185,
               "stateMutability": "nonpayable",
@@ -3441,7 +3494,9 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [null],
+                          "names": [
+                            null
+                          ],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -3454,8 +3509,11 @@
                                   "typeString": "bool"
                                 }
                               ],
-                              "overloadedDeclarations": [203, 204],
-                              "referencedDeclaration": 203,
+                              "overloadedDeclarations": [
+                                291,
+                                292
+                              ],
+                              "referencedDeclaration": 291,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -3491,7 +3549,9 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
                                       "referencedDeclaration": 32,
                                       "type": "mapping(address => uint256)",
                                       "value": "balanceOf"
@@ -3515,8 +3575,10 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [null],
-                                          "referencedDeclaration": 200,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 288,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -3537,7 +3599,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 59,
                                   "type": "uint256",
                                   "value": "_value"
@@ -3587,7 +3651,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 32,
                                   "type": "mapping(address => uint256)",
                                   "value": "balanceOf"
@@ -3611,8 +3677,10 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
-                                      "referencedDeclaration": 200,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 288,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -3633,7 +3701,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 59,
                               "type": "uint256",
                               "value": "_value"
@@ -3678,7 +3748,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 32,
                                   "type": "mapping(address => uint256)",
                                   "value": "balanceOf"
@@ -3690,7 +3762,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 57,
                                   "type": "address",
                                   "value": "_to"
@@ -3707,7 +3781,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 59,
                               "type": "uint256",
                               "value": "_value"
@@ -3736,7 +3812,9 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [null],
+                          "names": [
+                            null
+                          ],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -3757,7 +3835,9 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 20,
                               "type": "function (address,address,uint256)",
                               "value": "Transfer"
@@ -3781,8 +3861,10 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
-                                  "referencedDeclaration": 200,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 288,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -3798,7 +3880,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 57,
                               "type": "address",
                               "value": "_to"
@@ -3810,7 +3894,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 59,
                               "type": "uint256",
                               "value": "_value"
@@ -3872,7 +3958,9 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [null],
+              "modifiers": [
+                null
+              ],
               "name": "approve",
               "scope": 185,
               "stateMutability": "nonpayable",
@@ -4011,7 +4099,9 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
                                       "referencedDeclaration": 38,
                                       "type": "mapping(address => mapping(address => uint256))",
                                       "value": "allowance"
@@ -4035,8 +4125,10 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [null],
-                                          "referencedDeclaration": 200,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 288,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -4057,7 +4149,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 98,
                                   "type": "address",
                                   "value": "_spender"
@@ -4074,7 +4168,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 100,
                               "type": "uint256",
                               "value": "_value"
@@ -4103,7 +4199,9 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [null],
+                          "names": [
+                            null
+                          ],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4124,7 +4222,9 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 28,
                               "type": "function (address,address,uint256)",
                               "value": "Approval"
@@ -4148,8 +4248,10 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
-                                  "referencedDeclaration": 200,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 288,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -4165,7 +4267,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 98,
                               "type": "address",
                               "value": "_spender"
@@ -4177,7 +4281,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 100,
                               "type": "uint256",
                               "value": "_value"
@@ -4239,7 +4345,9 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [null],
+              "modifiers": [
+                null
+              ],
               "name": "transferFrom",
               "scope": 185,
               "stateMutability": "nonpayable",
@@ -4379,7 +4487,9 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [null],
+                          "names": [
+                            null
+                          ],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4392,8 +4502,11 @@
                                   "typeString": "bool"
                                 }
                               ],
-                              "overloadedDeclarations": [203, 204],
-                              "referencedDeclaration": 203,
+                              "overloadedDeclarations": [
+                                291,
+                                292
+                              ],
+                              "referencedDeclaration": 291,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -4419,7 +4532,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 130,
                                   "type": "uint256",
                                   "value": "_value"
@@ -4441,7 +4556,9 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
                                       "referencedDeclaration": 32,
                                       "type": "mapping(address => uint256)",
                                       "value": "balanceOf"
@@ -4453,7 +4570,9 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
                                       "referencedDeclaration": 126,
                                       "type": "address",
                                       "value": "_from"
@@ -4492,7 +4611,9 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [null],
+                          "names": [
+                            null
+                          ],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4505,8 +4626,11 @@
                                   "typeString": "bool"
                                 }
                               ],
-                              "overloadedDeclarations": [203, 204],
-                              "referencedDeclaration": 203,
+                              "overloadedDeclarations": [
+                                291,
+                                292
+                              ],
+                              "referencedDeclaration": 291,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
@@ -4532,7 +4656,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 130,
                                   "type": "uint256",
                                   "value": "_value"
@@ -4564,7 +4690,9 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [null],
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
                                           "referencedDeclaration": 38,
                                           "type": "mapping(address => mapping(address => uint256))",
                                           "value": "allowance"
@@ -4576,7 +4704,9 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [null],
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
                                           "referencedDeclaration": 126,
                                           "type": "address",
                                           "value": "_from"
@@ -4605,8 +4735,10 @@
                                       {
                                         "attributes": {
                                           "argumentTypes": null,
-                                          "overloadedDeclarations": [null],
-                                          "referencedDeclaration": 200,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 288,
                                           "type": "msg",
                                           "value": "msg"
                                         },
@@ -4665,7 +4797,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 32,
                                   "type": "mapping(address => uint256)",
                                   "value": "balanceOf"
@@ -4677,7 +4811,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 126,
                                   "type": "address",
                                   "value": "_from"
@@ -4694,7 +4830,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 130,
                               "type": "uint256",
                               "value": "_value"
@@ -4739,7 +4877,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 32,
                                   "type": "mapping(address => uint256)",
                                   "value": "balanceOf"
@@ -4751,7 +4891,9 @@
                               {
                                 "attributes": {
                                   "argumentTypes": null,
-                                  "overloadedDeclarations": [null],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
                                   "referencedDeclaration": 128,
                                   "type": "address",
                                   "value": "_to"
@@ -4768,7 +4910,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 130,
                               "type": "uint256",
                               "value": "_value"
@@ -4823,7 +4967,9 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
                                       "referencedDeclaration": 38,
                                       "type": "mapping(address => mapping(address => uint256))",
                                       "value": "allowance"
@@ -4835,7 +4981,9 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
                                       "referencedDeclaration": 126,
                                       "type": "address",
                                       "value": "_from"
@@ -4864,8 +5012,10 @@
                                   {
                                     "attributes": {
                                       "argumentTypes": null,
-                                      "overloadedDeclarations": [null],
-                                      "referencedDeclaration": 200,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 288,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -4886,7 +5036,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 130,
                               "type": "uint256",
                               "value": "_value"
@@ -4915,7 +5067,9 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [null],
+                          "names": [
+                            null
+                          ],
                           "type": "tuple()",
                           "type_conversion": false
                         },
@@ -4936,7 +5090,9 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 20,
                               "type": "function (address,address,uint256)",
                               "value": "Transfer"
@@ -4948,7 +5104,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 126,
                               "type": "address",
                               "value": "_from"
@@ -4960,7 +5118,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 128,
                               "type": "address",
                               "value": "_to"
@@ -4972,7 +5132,9 @@
                           {
                             "attributes": {
                               "argumentTypes": null,
-                              "overloadedDeclarations": [null],
+                              "overloadedDeclarations": [
+                                null
+                              ],
                               "referencedDeclaration": 130,
                               "type": "uint256",
                               "value": "_value"
@@ -5046,12 +5208,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x10196DadBe2C082A2C7eA52323FE8080324bee4e",
-      "transactionHash": "0x6c264ec02532b4470c5ae76ffbdc7723790b88aa9020a58d36e0df4ee41e7c14"
+      "address": "0xf3f895c0864C8D5a8DB8c97d7aceCA63314d5C4a",
+      "transactionHash": "0xc7f28985428f35b56f232cbb8c658aa58fb46ecc88594f936e87ea0dcaa261b4"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-29T07:31:35.016Z",
+  "updatedAt": "2022-01-31T01:24:45.292Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

@@ -1,4 +1,4 @@
-const DappToken = artifacts.require("../contracts/DappToken.sol");
+const DappToken = artifacts.require("./DappToken.sol");
 
 contract("DappToken", (accounts) => {
   let tokenInstance, fromAccount, toAccount, spendingAccount;
