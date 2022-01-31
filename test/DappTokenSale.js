@@ -98,4 +98,36 @@ contract("DappTokenSale", (accounts) => {
         );
       });
   });
+
+  it("End token sale", () => {
+    return DappToken.deployed()
+      .then((instance) => {
+        tokenInstance = instance;
+        return DappTokenSale.deployed();
+      })
+      .then((instance) => {
+        tokenSaleInstance = instance;
+        return tokenSaleInstance.endSale({ from: buyer });
+      })
+      .then(assert.fail)
+      .catch((err) => {
+        assert(err.message.indexOf("revert") >= 0, "must be admin to end sale");
+        return tokenSaleInstance.endSale({ from: admin });
+      })
+      .then((receipt) => {
+        return tokenInstance.balanceOf(admin);
+      })
+      .then(async (balance) => {
+        assert.equal(
+          balance.toNumber(),
+          999990,
+          "returns all unsold dapp tokens to admin"
+        );
+
+        const tokenSaleBalance = await web3.eth.getBalance(
+          tokenSaleInstance.address
+        );
+        assert.equal(tokenSaleBalance, 0);
+      });
+  });
 });
